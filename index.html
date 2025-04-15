@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Formulário</title>
+</head>
+<body>
+
+    <header>
+        <div id="navbar">
+            <img src="Imagens/Black and White Circle Business Logo (1).png" id="icon" alt="icone">
+            <h1>RSB Smartfix</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="main">
+            <div id="form">
+                <div class="scroll">
+                    <div style="text-align: center; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <h1>Cadastro de usuario</h1>
+                    </div>
+                    <form id="formulario" onsubmit="return validarFormulario()">
+                        <h3>Informações Gerais: </h3>
+                         <label for="nome">Nome: </label>
+                    
+                    <br>
+                       
+                        <input type="text" class="inputs" placeholder="Insira seu nome" id="nome" name="nome" required>
+                    
+                    <br>
+                    
+                        <label for="nascimento">Data de Nascimento: </label>
+                    
+                    <br>
+                        <input type="date" class="inputs" id="nascimento" name="nascimento" required>
+                    
+                    <br>
+                    
+                        <label for="email">E-mail</label>
+            
+                    <br>
+                        
+                        <input type="email" class="inputs" placeholder="Insira seu Email" id="email" name="email" required>
+                    
+                    <br>
+                    
+                        <label for="tel">Telefone: </label>
+                
+                    <br>
+                        
+                        <input type="tel" class="inputs" placeholder="Insira Seu Telefone" name="tel" id="tel" required>
+                    
+                    <br>
+                    
+                    <label for="sexo">Sexo: </label>
+                    <input type="radio" name="sex" id="masc" value="masculino">
+                    <label for="masc">Homem</label>
+                    <input type="radio" name="sex" id="fem" value="feminino">
+                    <label for="fem">Mulher</label>
+                    <input type="radio" name="sex" id="outro" value="outro">
+                    <label for="outro">Outro</label>
+                     
+                    <br>
+                        <h3>Endereço: </h3>
+                        <label for="cidade">Cidade: </label>
+                    <br>
+                        <input type="text" class="inputs" id="cidade" name="cidade" required>
+                    <br>
+                    
+                    <label for="estado">Digite o estado (sigla):</label>
+                    <br>
+                        <input type="text" class="inputs" id="estado" name="estado" maxlength="2" required>
+                    <br>
+                    
+                        <label for="pais">País: </label>
+                    <br>
+                        <input type="text" class="inputs" id="pais" name="pais" required>
+                    <br>
+                    
+                        <label for="rua">Rua e Número da Casa: </label>
+                    <br>
+                        <input type="text" class="inputs" id="rua" name="rua" required>
+                    <br>
+                    
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                </div>
+                
+            <div id="">
+                <img id="" src="Imagens/" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ✅ NAVBAR ORIGINAL */
+#navbar {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    display: flex;
+}
+
+#icon {
+    height: 80px;
+    margin: 10px;
+}
+
+/* Container principal */
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Formulário */
+#form {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+#form h1,
+#form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+.inputs,
+input[type="date"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 8px;
+    margin-left: 12px;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #3f3f3f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #e2a90a;
+}
+
+/* Scroll personalizado */
+.scroll {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #form {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #main {
+        padding: 60px 100px;
+    }
+
+    #form {
+        max-width: 800px;
+    }
+}
