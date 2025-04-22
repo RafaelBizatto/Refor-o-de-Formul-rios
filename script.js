@@ -7,10 +7,11 @@ function validarFormulario() {
     const cidade = document.getElementById('cidade').value.trim();
     const estado = document.getElementById('estado').value.trim().toUpperCase();
     const pais = document.getElementById('pais').value.trim();
+    const vizinho = document.getElementById('vizinho').value.trim();
     const rua = document.getElementById('rua').value.trim();
 
     // Validação de campos vazios
-    if (!nome || !nascimento || !email || !telefone || !sexo || !cidade || !estado || !pais || !rua) {
+    if (!nome || !nascimento || !email || !telefone || !sexo || !cidade || !estado || !pais || !vizinho || !rua ) {
         console.error("Erro: Por favor, preencha todos os campos obrigatórios.");
         return false;
     }
